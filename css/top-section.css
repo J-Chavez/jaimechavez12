@@ -1,0 +1,105 @@
+#top {
+}
+#top .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 80px 0;
+  align-items: center;
+}
+#top .info {
+  padding: 15px;
+  position: relative;
+}
+#top .info .blue-square {
+  border: 30px solid #ffc07c;
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  z-index: 0;
+  top: -50%;
+  left: -32%;
+}
+#top .info h1 {
+  position: relative;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: "noto sans jp", sans-serif;
+  color: #16171b;
+  margin-bottom: 2rem;
+  z-index: 1;
+  letter-spacing: 15px;
+}
+#top .info h1 span {
+  position: relative;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: "noto sans jp", sans-serif;
+  color: #ff8809;
+}
+#top .info p {
+  position: relative;
+  color: #919191;
+  text-transform: capitalize;
+  margin-bottom: 4rem;
+  letter-spacing: 4px;
+  z-index: 1;
+}
+#top .info a {
+  position: relative;
+  color: #ff8809;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  z-index: 1;
+  letter-spacing: 3px;
+  font-size: 0.8rem;
+}
+#top .img {
+}
+#top .img .background-img {
+  background: url("../img/photo-1494522996993-9194c5e6e3d2.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  max-width: 500px;
+  height: 800px;
+  margin: 0 auto;
+}
+/*  tablets n pads */
+@media only screen and (max-width: 960px) {
+  #top .info .blue-square {
+    left: -32px;
+  }
+  #top .info h1 span {
+    display: block;
+  }
+}
+/* mobile */
+@media only screen and (max-width: 767px) {
+  #top .container {
+    padding: 0 0 0 0;
+  }
+  #top .info {
+    padding: 0px 0px 0px 5px;
+  }
+  #top .info .blue-square {
+    display: none;
+  }
+  #top .info h1 {
+    font-size: 1.5rem;
+    letter-spacing: 10px;
+  }
+  #top .info h1 span {
+    font-size: 2rem;
+    letter-spacing: 12px;
+    display: block;
+  }
+  #top .img .background-img {
+    height: 100vh;
+  }
+}

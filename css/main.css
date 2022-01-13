@@ -1,0 +1,23 @@
+@import "reset.css";
+@import "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap";
+@import "top-section.css";
+@import "services.css";
+@import "portfolio-section.css";
+@import "experience-section.css";
+@import "blog-section.css";
+@import "footer-section.css";
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+/* 768 to 960 a tablet */
+@media only screen and (max-width: 960px) {
+  .container {
+    width: 100%;
+  }
+}
+
+/* phones under 768*/
+@media only screen and (max-width: 767px) {
+}

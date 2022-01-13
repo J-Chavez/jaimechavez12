@@ -1,0 +1,171 @@
+#experience-section {
+  padding: 80px 0;
+}
+#experience-section .large-title {
+  color: #ffc07c;
+  font-weight: 700;
+  font-size: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  position: relative;
+  left: -30px;
+}
+#experience-section .experience-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+#experience-section .experience-container .large-icons .square {
+  border: 30px solid #52b8ff;
+  padding: 5px;
+  display: inline-block;
+  position: relative;
+  top: -100px;
+}
+
+#experience-section .experience-container .large-icons .square .blue-box {
+  background: #52b8ff;
+  padding: 5px;
+  width: 150px;
+  height: 150px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#experience-section .experience-container .large-icons .circle {
+  border: 30px solid #ffc853;
+  padding: 5px;
+  display: inline-block;
+  color: #ffc853;
+  border-radius: 50%;
+  position: relative;
+  top: 60px;
+  left: 80px;
+}
+#experience-section .experience-container .large-icons .white-box {
+  color: #ffc853;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 500;
+}
+#experience-section .experience-container .large-icons .triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 150px 230px 150px;
+  border-color: transparent transparent #ff5253 transparent;
+  position: relative;
+  /* top: 50px; */
+}
+#experience-section .experience-container .large-icons .triangle-box {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 93.75px 151.75px 93.75px;
+  border-color: transparent transparent #fff transparent;
+  position: absolute;
+  left: -95px;
+  top: 50px;
+}
+#experience-section .experience-container .large-icons .triangle-box-text {
+  position: relative;
+  top: 100px;
+  left: -30px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #ff5253;
+}
+#experience-section .experience-container .info {
+  padding: 40px 0;
+}
+#experience-section .experience-container .info .info-box {
+  padding: 15px;
+}
+#experience-section .experience-container .info .info-box h4 {
+  color: #16171b;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+#experience-section .experience-container .date {
+  color: #ff5253;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  padding: 15px 0;
+  display: block;
+}
+#experience-section .experience-container p {
+  color: #b3b3b3;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+p {
+  background: image();
+}
+@media only screen and (max-width: 1200px) {
+  #experience-section .experience-container .large-icons .circle {
+    display: none;
+  }
+  #experience-section .large-title {
+    left: 0px;
+  }
+}
+/* tablets n pads  */
+@media only screen and (max-width: 960px) {
+  #experience-section .experience-container {
+    gap: 0px;
+  }
+  #experience-section .large-title {
+    left: 0px;
+  }
+  #experience-section .experience-container .large-icons {
+    position: relative;
+    top: -15px;
+  }
+  #experience-section .experience-container .large-icons .square {
+    top: 80px;
+    left: 60px;
+  }
+  #experience-section .experience-container .large-icons .circle {
+    display: none;
+  }
+  #experience-section .experience-container .large-icons .triangle {
+    top: 90px;
+    left: 25px;
+  }
+}
+
+/* /* mobile */
+@media only screen and (max-width: 767px) {
+  #experience-section .experience-container .large-icons .square,
+  .circle,
+  .triangle {
+    display: none;
+  }
+  #experience-section .experience-container {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 20px;
+  }
+  #experience-section .large-title {
+    letter-spacing: 3px;
+    font-size: 2.7rem;
+  }
+}
